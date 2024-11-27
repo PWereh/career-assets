@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peter A. Wereh - WASH & Infrastructure Specialist</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <style>
+            :root {
+                --primary-color: #3498db;
+                --secondary-color: #2c3e50;
+                --tertiary-color: #417295;
+                --text-color: #333;
+                --background-color: #f8f9fa;
+                --card-color: rgba(255, 255, 255, 0.9);
+            }
+            body {
+                font-family: "Poppins", sans-serif;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                line-height: 1.3;
+                margin: 0;
+                padding: 0;
+                font-size: 13px;
+                counter-reset: page;
+            }
+            .container {
+                max-width: 210mm;
+                margin: 0mm auto;
+                padding: 0;
+            }
+            .page {
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                position: relative;
+                width: 210mm;
+                height: 297mm;
+                padding: 15px;
+                box-sizing: border-box;
+                page-break-after: always;
+                counter-increment: page;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-color),
+                    var(--secondary-color)
+                );
+                color: white;
+                padding: 20px;
+                margin: -15px -15px 12px -15px;
+            }
+            .name-plate {
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                border-radius: 6px;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .name-plate h1 {
+                margin: 0px 0px 20px 0px;
+                font-size: 36px;
+                font-weight: 600;
+            }
+            .name-plate h2 {
+                margin: 2px 10px 0px 0px;
+                font-size: 24px;
+                font-variant: small-caps;
+                font-weight: 500;
+            }
+            .contact-card {
+                background-color: rgba(255, 255, 255, 0);
+                padding: 8px;
+                border-radius: 6px;
+                max-width: 320px;
+                flex: 1;
+                margin: 0px 0px 0px 105px;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 4px 12px;
+                justify-content: flex-start;
+            }
+            .contact-info a,
+            .contact-info span {
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                display: flex;
+                align-items: left;
+                gap: 8px;
+                padding: 4px 4px;
+                font-size: 12px;
+            }
+            .contact-info svg {
+                height: 16px;
+                width: 16px;
+            }
+            .content {
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+            }
+            .main-column {
+                flex: 2;
+            }
+            .side-column {
+                flex: 1;
+            }
+            .section {
+                background-color: white;
+                padding: 5px;
+                margin-bottom: 15px;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 
+                          0 1px 2px rgba(0, 0, 0, 0.08);
+                border: 1px solid rgba(0, 0, 0, 0.03);
+            }
+            .section p {
+                margin-left: 20px;
+            }
+            .section-title {
+                color: var(--primary-color);
+                margin: 2px 0 5px 0;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .section-title svg {
+                width: 16px;
+                height: 16px;
+            }
+            .experience-item {
+                margin-bottom: 6px;
+            }
+            .experience-item h4 {
+                margin: 10px 0 5px 22px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .experience-item h4 strong {
+                color: var(--secondary-color);
+            }
+            .experience-item h4 span {
+                color: #999999;
+            }
+            .experience-item p {
+                margin: 0 0 10px 23px;
+                color: #999999;
+                font-size: 12px;
+                position: relative;
+                padding-left: 5px;
+            }
+            .experience-item p::before {
+                content: '';
+                position: absolute;
+                left: -1px;
+                top: 0;
+                height: 100%;
+                width: 1px;
+                background-color: #99999980;
+            }
+            ul,
+            ol {
+                padding-left: 42px;
+                margin: 2px 0;
+                list-style-type: square;
+            }
+            li {
+                margin-bottom: 2px;
+                font-size: 12px;
+            }
+            .skill-item {
+                font-size: 12px;
+                color: var(--text-color);
+            }
+            .skill-name, .skill-name span, .skill-item span {
+                margin: 0 0 5px 10px;
+                color: #999999 !important;
+                font-size: 12px !important;
+                position: relative;
+                padding-left: 5px;
+            }
+            .skill-bar {
+                background-color: #e0e0e0;
+                height: 5px;
+                border-radius: 2px;
+                margin: 0 0 16px 27px;
+                width: calc(100% - 32px);
+            }
+            .skill-level {
+                background-color: var(--primary-color);
+                height: 100%;
+                border-radius: 2px;
+            }
+            .references-container {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .reference-item {
+                padding: 4px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 4px;
+            }
+            .reference-item h4 {
+                margin: 0 0 3px 0;
+                font-size: 13px;
+                color: var(--secondary-color);
+            }
+            .reference-item p {
+                margin: 0 0 2px 0;
+                font-size: 12px;
+                color: #999999;
+            }
+            .reference-item ul {
+                list-style: none;
+                padding: 0;
+                margin: 5px 0 0 0;
+            }
+            .reference-item li {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 11px;
+                color: #999999;
+                margin-bottom: 2px;
+            }
+            .reference-item svg {
+                width: 12px;
+                height: 12px;
+                stroke: var(--primary-color);
+            }
+            .footer {
+                background-color: var(--tertiary-color);
+                color: white;
+                padding: 8px 25px;
+                font-size: 11px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: grid;
+                grid-template-columns: 25px 1fr 25px;
+                align-items: center;
+                gap: 15px;
+            }
+            .footer-text {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+            }
+            .footer-text span {
+                padding: 0 8px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            .footer-text span:last-child {
+                border-right: none;
+            }
+            .footer-text .page-number::after {
+                content: counter(page) " of 2";
+            }
+            .skype-icon {
+                justify-self: start;
+                margin-left: 0;
+            }
+            .linkedin-icon {
+                justify-self: end;
+                margin-right: 0;
+            }
+            .footer img {
+                width: 20px;
+                height: 20px;
+                opacity: 0.8;
+                transition: opacity 0.3s ease;
+            }
+            .footer img:hover {
+                opacity: 1;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 11px;
+            }
+            th,
+            td {
+                padding: 2px 4px;
+                text-align: left;
+            }
+            @page {
+                margin: 0;
+                size: A4;
+            }
+            @media print {
+                body {
+                    background-color: white;
+                    margin: 0;
+                    padding: 0;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .container {
+                    margin: 0;
+                    padding: 0;
+                    box-shadow: none;
+                }
+                .page {
+                    margin: 0;
+                    padding: 15px;
+                    box-shadow: none;
+                    width: 210mm;
+                    height: 297mm;
+                    page-break-after: always;
+                }
+                .header {
+                    margin: -15px -15px 12px -15px;
+                    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+                }
+                .name-plate {
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                }
+                .section {
+                    background-color: var(--card-color) !important;
+                    break-inside: avoid;
+                }
+                .footer {
+                    background-color: var(--tertiary-color) !important;
+                    position: fixed;
+                    bottom: 0;
+                }
+                .skill-bar {
+                    background-color: #e0e0e0 !important;
+                }
+                .skill-level {
+                    background-color: var(--primary-color) !important;
+                }
+                .contact-info a,
+                .contact-info span {
+                    color: rgba(255, 255, 255, 0.6) !important;
+                }
+                ul {
+                    break-inside: avoid;
+                }
+                .experience-item {
+                    break-inside: avoid;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- First Page -->
+            <div class="page">
+                <header class="header">
+                    <div class="name-plate">
+                        <h1>PETER A. WEREH</h1>
+                        <h2>WASH & Infrastructure Specialist</h2>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <a href="tel:+254727358393">
+                                <i data-feather="phone"></i>+255 727 358 392
+                            </a>
+                            <a href="mailto:werepeter@gmail.com">
+                                <i data-feather="mail"></i>werepeter@gmail.com
+                            </a>
+                            <a href="mailto:werepeter@outlook.com">
+                                <i data-feather="mail"></i>werepeter@outlook.com
+                            </a>
+                            <span>
+                                <i data-feather="map-pin"></i>Nairobi, Kenya
+                            </span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <div class="main-column">
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="user"></i>Professional Summary
+                            </h3>
+                            <p>Senior WASH specialist with 13+ years of experience leading large-scale emergency response and development programs across Africa and the Middle East. Proven track record in crisis response, infrastructure development, and program management with organizations including NRC, IOM, IMC, and Oxfam. Strong expertise in emergency water supply systems, technical assessments, and cross-sector coordination. Previous success as NRC WASH Specialist managing multi-million dollar programs.</p>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="briefcase"></i>Professional Experience
+                            </h3>
+                            <div class="experience-item">
+                                <h4><strong>WASH Project Officer</strong><span> | IOM | Sudan | Feb.24 - Jun.24</span></h4>
+                                <p>Emergency Response | Blue Nile State | 50,000 people | WASH Infrastructure | Water supply systems, sanitation facilities</p>
+                                <ul>
+                                    <li>Led the implementation of emergency WASH response activities in conflict-affected areas, ensuring timely delivery of critical services.</li>
+                                    <li>Coordinated with local authorities and partners to establish sustainable water supply systems serving displaced populations.</li>
+                                    <li>Managed construction of emergency sanitation facilities and hygiene promotion activities reaching 50,000 beneficiaries.</li>
+                                    <li>Developed detailed technical assessments and project proposals for WASH infrastructure improvements.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4><strong>WASH Delegate</strong><span> | CRC | International | Sep.21 - Present</span></h4>
+                                <p>Emergency Response | Various Locations | Multiple National Societies | WASH Systems | Capacity building, technical support</p>
+                                <ul>
+                                    <li>Provided surge support for National Societies and IFRC rapid response management systems in establishing WASH program frameworks.</li>
+                                    <li>Supported National Society Development initiatives implementing core RCRC strategies and technical guidelines.</li>
+                                    <li>Conducted analysis and reporting for WASH-supported activities, maintaining close liaison with team members.</li>
+                                    <li>Participated in professional development through Canadian Red Cross Emergency Response Units training programs.</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4><strong>WASH Specialist</strong><span> | Norwegian Refugee Council | Kenya & Tanzania | Aug.21 - Aug.22</span></h4>
+                                <p>Refugee WASH Response | Kakuma, Dadaab, Nyarugusu | 527,000 refugees | Water Supply, Sanitation | 5 solar systems, 5,000+ latrines</p>
+                                <ul>
+                                    <li>Managed $23.8M WASH programs serving 527,000 refugees</li>
+                                    <li>Developed technical SOPs and strategies for integrated services</li>
+                                    <li>Led program development and funding proposals</li>
+                                    <li>Implemented climate-resilient WASH approaches</li>
+                                    <li>Secured $23.8M funding, trained 42 technical staff</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="side-column">
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="award"></i>Technical Skills
+                            </h3>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Emergency WASH Response</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Infrastructure Development</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Coordination</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Program Management</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Stakeholder Coordination</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="book"></i>Education
+                            </h3>
+                            <div class="experience-item">
+                                <h4>BSc. Water and Environmental Engineering</h4>
+                                <p>Egerton University, Kenya | 2002-2007</p>
+                            </div>
+                            <div class="experience-item">
+                                <h4>Masters in Business Administration (MBA)</h4>
+                                <p>University of the People, USA | 2023</p>
+                            </div>
+                            <div class="experience-item">
+                                <h4>Registered Graduate Engineer</h4>
+                                <p>Engineers Registration Board Kenya</p>
+                            </div>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="check-circle"></i>Certifications
+                            </h3>
+                            <ul>
+                                <li>WASH Systems Strengthening (IRC)</li>
+                                <li>IWRM and Climate Resilience</li>
+                                <li>WASH in Emergencies (IFRC)</li>
+                                <li>Advanced Water Systems Design</li>
+                                <li>Emergency Response Management</li>
+                                <li>Market-Based Programming</li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="globe"></i>Languages
+                            </h3>
+                            <table>
+                                <tr>
+                                    <th>Language</th>
+                                    <th>Speak</th>
+                                    <th>Read</th>
+                                    <th>Write</th>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                </tr>
+                                <tr>
+                                    <td>Arabic</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>French</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Swahili</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <img class="skype-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/31/Skype.png?20221109081448" alt="Skype" />
+                    <div class="footer-text">
+                        <span> 2024</span>
+                        <span>Peter A. Wereh</span>
+                        <span>WASH & Infrastructure Specialist</span>
+                        <span class="page-number"></span>
+                    </div>
+                    <img class="linkedin-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" />
+                </footer>
+            </div>
+
+            <!-- Second Page -->
+            <div class="page">
+                <header class="header">
+                    <div class="name-plate">
+                        <h1>PETER A. WEREH</h1>
+                        <h2>WASH & Infrastructure Specialist</h2>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <div class="main-column">
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="briefcase"></i>Professional Experience Continued
+                            </h3>
+
+                            <div class="experience-item">
+                                <h4><strong>WASH Coordinator</strong><span> | IMC | Nigeria | Sep.18 - Mar.19</span></h4>
+                                <p>Emergency Response | Northeast Nigeria | 120,000 people | WASH Infrastructure | Water supply, sanitation facilities</p>
+                                <ul>
+                                    <li>Managed WASH programs in conflict-affected areas of Northeast Nigeria</li>
+                                    <li>Coordinated construction of emergency water supply and sanitation facilities</li>
+                                    <li>Led hygiene promotion activities reaching 120,000 beneficiaries</li>
+                                    <li>Developed proposals and managed donor reporting requirements</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4><strong>Sanitation Expert</strong><span> | COWI A/S | Kenya | Sep.16 - Jan.18</span></h4>
+                                <p>Nairobi Masterplan | Metropolitan Area | 5M+ residents | Urban Sanitation | 500km sewer network, informal solutions</p>
+                                <ul>
+                                    <li>Led sanitation component of Nairobi Masterplan</li>
+                                    <li>Developed urban sanitation strategies and plans</li>
+                                    <li>Conducted feasibility studies and assessments</li>
+                                    <li>Designed informal settlement solutions</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4><strong>WASH Delegate</strong><span> | IFRC | Sierra Leone | Feb.18 - Sep.18</span></h4>
+                                <p>Floods Response | Freetown | 26,000 beneficiaries | Emergency WASH | 6 solar boreholes, 400 rainwater systems</p>
+                                <ul>
+                                    <li>Directed Red Cross Society emergency WASH response for 26,000 flood-affected people</li>
+                                    <li>Secured $4.63M funding from ECHO and OFID</li>
+                                    <li>Managed construction of 6 solar-powered boreholes</li>
+                                    <li>Installed 400 household rainwater harvesting systems</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4><strong>Public Health Engineering Team Leader</strong><span> | Oxfam | Jordan | Mar.14 - Mar.16</span></h4>
+                                <p>Syrian Response | Zaatari Camp | 100,000 refugees | Water & Wastewater | 245km water, 37km sewer networks</p>
+                                <ul>
+                                    <li>Led design and implementation of WASH infrastructure for 100,000 Syrian refugees</li>
+                                    <li>Secured $16M UNICEF funding for long-term infrastructure</li>
+                                    <li>Managed $11M construction contracts and international contractors</li>
+                                    <li>Implemented 245km water network and 37km sewerage system</li>
+                                    <li>Reduced water losses from 40% to 15% through system optimization</li>
+                                    <li>Headed 12-member technical team</li>
+                                </ul>
+                            </div>
+
+                            <section class="section">
+                                <h3 class="section-title">
+                                    <i data-feather="target"></i>Key Achievements
+                                </h3>
+                                <div class="experience-item">
+                                    <ul>
+                                        <li>Successfully managed WASH programs serving over 2.2M beneficiaries</li>
+                                        <li>Secured and managed over $45M in humanitarian funding</li>
+                                        <li>Implemented sustainable WASH solutions in multiple crisis contexts</li>
+                                        <li>Led multi-stakeholder coordination in complex environments</li>
+                                        <li>Developed innovative climate-resilient WASH approaches</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+
+                    <div class="side-column">
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="award"></i>Additional Training
+                            </h3>
+                            <ul>
+                                <li>Operations Management (IFRC)</li>
+                                <li>Project Planning and Management</li>
+                                <li>FIDIC Contract Administration</li>
+                                <li>Climate Change Action</li>
+                                <li>Gender Equality in Emergencies</li>
+                                <li>Prevention of Sexual Exploitation</li>
+                                <li>Sphere Standards in Practice</li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="users"></i>Professional Memberships
+                            </h3>
+                            <ul>
+                                <li>Institution of Engineers of Kenya</li>
+                                <li>Global WASH Cluster</li>
+                                <li>Career Development Institute</li>
+                                <li>Engineers Registration Board</li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="star"></i>Core Competencies
+                            </h3>
+                            <ul>
+                                <li>Emergency WASH Response</li>
+                                <li>Infrastructure Development</li>
+                                <li>Program Management</li>
+                                <li>Technical Assessment</li>
+                                <li>Stakeholder Coordination</li>
+                                <li>Resource Mobilization</li>
+                                <li>Team Leadership</li>
+                                <li>Strategy Development</li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="users"></i>References
+                            </h3>
+                            <div class="references-container">
+                                <div class="reference-item">
+                                    <h4><strong>Tomas Lopez de Bufala</strong></h4>
+                                    <p>Chief of WASH</p>
+                                    <p>UNICEF, Angola</p>
+                                    <ul>
+                                        <li><i data-feather="phone"></i> (+244) 912 653 016</li>
+                                        <li><i data-feather="mail"></i> tomaslopezdebufala@gmail.com</li>
+                                        <li><i data-feather="message-circle"></i> TOMASL.UNOPS</li>
+                                    </ul>
+                                </div>
+
+                                <div class="reference-item">
+                                    <h4><strong>Gyula Kadar</strong></h4>
+                                    <p>Regional Operations Manager</p>
+                                    <p>IFRC, Sierra Leone</p>
+                                    <ul>
+                                        <li><i data-feather="phone"></i> (+232) 79 423686</li>
+                                        <li><i data-feather="mail"></i> gyula.kadar@ifrc.org</li>
+                                        <li><i data-feather="message-circle"></i> GYULA.KADAR10</li>
+                                    </ul>
+                                </div>
+
+                                <div class="reference-item">
+                                    <h4><strong>Syed Yasir Ahmad</strong></h4>
+                                    <p>Global WASH Advisor</p>
+                                    <p>International Medical Corps (IMC) UK</p>
+                                    <ul>
+                                        <li><i data-feather="phone"></i> (+44) 7424 927 611</li>
+                                        <li><i data-feather="mail"></i> syahmad@internationalmedicalcorps.org.uk</li>
+                                        <li><i data-feather="message-circle"></i> SYEDYASIRAHMAD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <img class="skype-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/31/Skype.png?20221109081448" alt="Skype" />
+                    <div class="footer-text">
+                        <span> 2024</span>
+                        <span>Peter A. Wereh</span>
+                        <span>WASH & Infrastructure Specialist</span>
+                        <span class="page-number"></span>
+                    </div>
+                    <img class="linkedin-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" />
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            feather.replace({ width: 14, height: 14 });
+        </script>
+    </body>
+</html>
