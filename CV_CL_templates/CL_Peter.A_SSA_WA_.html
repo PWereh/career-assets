@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+    <!--
+    AI/LLM INSTRUCTION MANUAL
+    =========================
+    Version: 2024.1
+    Last Updated: 2024-12-23
+    CRITICAL NOTICE:
+    ================
+    ALL CONTENT IN THIS TEMPLATE IS STATIC AND MUST NOT BE MODIFIED
+    The only exception is the name-plate h2 element which can be updated
+    to reflect different roles/positions.
+    MODIFICATION RULES:
+    1. [STATIC] - ALL content except name-plate h2
+    2. [DYNAMIC] - ONLY the name-plate h2 element
+    ANY ATTEMPT TO MODIFY OTHER ELEMENTS WILL BREAK TEMPLATE CONSISTENCY
+    -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cover Letter Template [STATIC]</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!--
+            IMPORTANT: CORE STYLING SECTION [STATIC]
+            ===============================
+            DO NOT MODIFY ANY OF THE STYLES BELOW
+            These styles have been carefully calibrated for:
+            - Precise element positioning
+            - Exact icon alignment
+            - Consistent spacing and margins
+            - Perfect print layout
+
+            EXCEPTION: Only name-plate h2 styling can be adjusted
+            ===============================
+        -->
+        <style>
+            /* Core Variables - DO NOT MODIFY */
+            :root {
+            --primary-color: #3498db;
+            /* Main brand blue - STATIC */
+            --secondary-color: #2c3e50;
+            /* Dark navy - STATIC */
+            --tertiary-color: #417295;
+            /* Muted blue - STATIC */
+            --text-color: #333;
+            /* Standard text - STATIC */
+            --background-color: #f8f9fa;
+            /* Light gray - STATIC */
+            --card-color: rgba(
+            255,
+            255,
+            255,
+            0.9
+            );
+            /* Semi-transparent - STATIC */
+            }
+
+            /* Base Styles - ALL STATIC */
+            body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.3;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+            counter-reset: page;
+            }
+
+            /* Layout Components - ALL STATIC */
+            .container {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            }
+
+            /* Header Styles - ALL STATIC except name-plate h2 */
+            .header {
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+            );
+            color: white;
+            padding: 20px;
+            margin: -15px -15px 12px -15px;
+            }
+
+            .name-plate {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            padding-right: 66px;
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            }
+
+            /* STATIC Elements */
+            .name-plate h1 {
+            margin: 0px 0px 20px 5px;
+            font-size: 36px;
+            font-weight: 600;
+            }
+
+            /* DYNAMIC Element - Can be modified */
+            .name-plate h2 {
+            margin: 2px 10px 0px 5px;
+            font-size: 20px;
+            font-variant: small-caps;
+            font-weight: 500;
+            }
+
+            /* Contact Card Styles - ALL STATIC */
+            .contact-card {
+            background-color: rgba(255, 255, 255, 0);
+            padding: 8px;
+            border-radius: 6px;
+            max-width: 320px;
+            flex: 1;
+            margin: 0px 0px 0px 115px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            }
+
+            .contact-info {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 4px 12px;
+            justify-content: flex-start;
+            }
+
+            .contact-info a,
+            .contact-info span {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            display: flex;
+            align-items: left;
+            gap: 8px;
+            padding: 4px 4px;
+            font-size: 12px;
+            }
+
+            .contact-info svg {
+            height: 16px;
+            width: 16px;
+            stroke: currentColor;
+            color: rgba(255, 255, 255, 0.6);
+            }
+
+            /* Content Styles - ALL STATIC */
+            .content {
+            padding: 5px 25px 10px;
+            position: relative;
+            height: calc(100% - 150px);
+            box-sizing: border-box;
+            overflow-y: auto;
+            text-align: left;
+            line-height: 1.3;
+            font-size: 11pt;
+            }
+
+            .date-address {
+            margin: 0 0 10px 0;
+            }
+
+            .letter-body {
+            text-align: left;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            }
+            .letter-body h4 {
+            font-size: 1px:
+            font-weight: 600;
+            text-align: left;
+            margin: 10px 0px 10px 0px;
+            line-height: 1.3;
+            }
+
+            .letter-body p:first-child {
+            margin-top: 0;
+            }
+
+            .letter-body p {
+            margin: 10px 0 10px 0;
+            }
+
+            .letter-body br + br {
+            display: none;
+            }
+
+            .letter-body ul {
+            list-style-type: square;
+            padding-left: 0px;
+            margin: 10px 0;
+            }
+
+            .letter-body li {
+            margin: 5px 0px 0px 15px;
+            }
+
+            /* Position Reference - STATIC */
+            .position-reference {
+            font-weight: 700;
+            margin: 15px 0;
+            font-size: 11pt;
+            }
+
+            /* Signature Styles - ALL STATIC */
+            .signature {
+            width: 80%;
+            max-width: 300px;
+            margin: 20px 0;
+            }
+
+            .signature img {
+            width: 50%;
+            max-width: 300px;
+            margin: 0;
+            padding: 0;
+            display: block;
+            }
+
+            /* Footer Styles - ALL STATIC */
+            .footer {
+            background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+            );
+            color: white;
+            padding: 8px 25px;
+            font-size: 11px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: grid;
+            grid-template-columns: 25px 1fr 25px;
+            align-items: center;
+            gap: 15px;
+            }
+
+            .footer-text {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            }
+
+            .footer-text span {
+            padding: 0 8px;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .footer-text span:last-child {
+            border-right: none;
+            }
+
+            .footer-text .page-number::after {
+            content: "1 of 1";
+            }
+
+            .skype-icon {
+            justify-self: start;
+            margin-left: 0;
+            }
+
+            .linkedin-icon {
+            justify-self: end;
+            margin-right: 0;
+            }
+
+            .footer img {
+            width: 20px;
+            height: 20px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            }
+
+            .footer img:hover {
+            opacity: 1;
+            }
+
+            /* Print Styles - ALL STATIC */
+            @media print {
+            body {
+            background: none;
+            }
+            .container {
+            box-shadow: none;
+            margin: 0;
+            }
+            .content {
+            padding: 5px 20px 15px;
+            position: relative;
+            height: calc(100% - 150px);
+            box-sizing: border-box;
+            overflow-y: auto;
+            line-height: 1.3;
+            font-size: 10pt;
+            }
+            .header,
+            .footer {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            }
+            }
+
+            @page {
+            size: A4;
+            margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            TEMPLATE STRUCTURE [STATIC]
+            ==========================
+            ALL ELEMENTS BELOW ARE STATIC
+            DO NOT MODIFY ANY CONTENT EXCEPT name-plate h2
+        -->
+        <div class="container">
+            <header class="header">
+                <div class="name-plate">
+                    <h1>PETER A. WEREH</h1>
+                    <!-- [DYNAMIC] Only this h2 element can be modified -->
+                    <h2>WASH & HUMANITARIAN PROGRAM EXPERT</h2>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <span>
+                            <i data-feather="mail"></i>
+                            wereh.achieng@gmail.com
+                        </span>
+                        <span>
+                            <i data-feather="mail"></i>
+                            wereh.achieng@outlook.com
+                        </span>
+                        <span>
+                            <i data-feather="phone"></i>
+                            +254 727 358 392
+                        </span>
+                        <span>
+                            <i data-feather="map-pin"></i>
+                            Nairobi, Kenya
+                        </span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="date-address">
+                    Tuesday, March 18, 2025<br /><br />
+                    Peace-Winds Japan<br />
+                    Lavington Shopping Mall<br />
+                    Nairobi, Kenya<br /><br />
+                </div>
+                <div class="letter-body">
+                    <p>Dear Recruitment Committee,</p>
+                </div>
+
+                <div class="position-reference">
+                    RE: Application for Area Manager Daadab
+                </div>
+
+                <div class="letter-body">
+                    <p>
+                        I am writing to express my interest in the Area Manager
+                        position with Peace Winds Japan in Dadaab, Garissa
+                        County. With 15+ years of experience in WASH and
+                        humanitarian program management, including specific work
+                        in Dadaab Refugee Complex, I offer a unique combination
+                        of technical expertise, leadership experience, and
+                        contextual understanding that contributes to PWJ's
+                        mission to improve living conditions for both host and
+                        refugee populations in Kenya's North Eastern region.
+                    </p>
+
+                    <p>
+                        My experience designing and implementing water supply
+                        systems in Dadaab during the emergency drought response
+                        provides me with invaluable context-specific knowledge
+                        of the operational environment, local stakeholders, and
+                        infrastructure challenges. Additionally, as Public
+                        Health Engineering Team Leader in Zaatari Refugee Camp,
+                        I successfully transformed emergency WASH infrastructure
+                        into sustainable solutions serving 100,000 Syrian
+                        refugees - experience directly applicable to PWJ's work
+                        implementing sustainable solutions aligned with Kenya's
+                        Shirika Plan and Garissa County's strategic initiatives.
+                    </p>
+
+                    <p>
+                        PWJ's commitment to the humanitarian-development-peace
+                        nexus and climate change adaptation resonates strongly
+                        with my approach to program management. Throughout my
+                        career, I have consistently demonstrated the ability to
+                        balance strategic vision with practical implementation,
+                        mobilize resources ($16M secured from UNICEF for WASH
+                        infrastructure), and build productive partnerships with
+                        government authorities, UN agencies, and communities. My
+                        recent role managing emergency WASH response in Sudan
+                        with IOM has further strengthened my capacity to lead
+                        humanitarian-development-peace nexus programs working
+                        with diverse teams in complex, dynamic environments
+                        while ensuring operational accountability and program
+                        quality.
+                    </p>
+
+                    <p>
+                        I have worked closely with PWJ as a WASH partner while with NRC in
+                        Kakuma, and I am particularly drawn to PWJ's 29-year legacy of
+                        determined humanitarian assistance and your philosophy
+                        of "making the impossible possible." Your organization's
+                        focus on neutrality, effectiveness, and transparent
+                        collaboration mirrors my own professional values. The
+                        opportunity to lead PWJ's field operations in Garissa
+                        County represents an ideal platform to apply my
+                        expertise in developing sustainable solutions for
+                        protracted refugee situations while fostering peaceful
+                        coexistence between host and refugee communities.
+                    </p>
+                    <p>
+                        My salary expectations fall within the range of KES
+                        350,000-400,000 per month, negotiable based on the
+                        comprehensive benefits package. I am available to start
+                        on May 1, 2025, as required, and would welcome the
+                        opportunity to discuss how my experience and approach
+                        align with PWJ's needs in Dadaab.
+                    </p>
+
+                    <p>Thank you for considering my application.</p>
+
+                    <div class="signature">
+                        Sincerely,<br />
+                        <img
+                            src="https://raw.githubusercontent.com/PWereh/career-assets/main/assets/signature.png"
+                            alt="Signature"
+                        /><br />
+                        Peter A. Wereh <br /><br />
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <img
+                    class="skype-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/31/Skype.png?20221109081448"
+                    alt="Skype"
+                />
+                <div class="footer-text">
+                    <span>&copy; 2025</span>
+                    <span>Peter A. Wereh</span>
+                    <span>WASH & HUMANITARIAN PROGRAM EXPERT</span>
+                    <span class="page-number"></span>
+                </div>
+                <img
+                    class="linkedin-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                    alt="LinkedIn"
+                />
+            </footer>
+        </div>
+
+        <script>
+            feather.replace({
+                width: 14,
+                height: 14
+            });
+        </script>
+    </body>
+</html>
