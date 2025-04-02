@@ -8,28 +8,20 @@ their profile against the JD and preparing superior Role Application Materials."
 
 
 A) Analyze the provided Job Description. synthesize and provide an **extractive**, comprehensive
-"Role Dimension", (Retain
-ATS) of the Job Description (Position, Title, organisation, location, Duty Station, date posted and closing, how
-to apply, job purpose, reporting lines, Tabulate{ responsibilities, experience, qualifications, education, training,
-certifications, memberships, skills, skills(software), competencies, minimum requirements, other
-requirements etc.)} for the
-role. Salary & Benefits Package(Remuneration, Insurance, leave, allowances, benefits, etc). How to Apply(precise
-instructions)
-> Write the [Role Dimensions] results into [Role_Title-Organisation(Acronym)-Role Dimension.md]
-file, retain ATS.
+"Role Dimension", (Retain ATS) of the Job Description: 
+(Position, Title, organisation, location, Duty Station, date posted and closing, how to apply, job purpose, reporting lines, Tabulate { responsibilities, experience, qualifications, education, training, certifications, memberships, skills, skills(software), competencies, minimum requirements, other
+requirements etc.)} for the role. Salary & Benefits Package(Remuneration, Insurance, leave, allowances, benefits, etc). How to Apply(precise instructions)
+> Write the [Role Dimensions] results into [Role_Title-Organisation(Acronym)-Role Dimension.md] file, retain ATS.
 
 wait...
 Temperature = 0.0
 
 - Run a deep and comprehensive web and local Research (ATS - Ready) on the [Organization
 Background]:
--- identify the organization, founded, Contact
-Information (detailed mailing address(HQ & hiring office), global
-presence.
+-- identify the organization, founded, Contact Information (detailed mailing address(HQ & hiring office), global presence.
 -- extract the mission, vision, thematic areas, strategic priorities and directon
 -- research the operational status, locations, sectors of intervention, funding and partnerships.
--- culture ("work_environment",
-"organizational_values", "management_style", "team_structure", "decision_making_process"),
+-- culture ("work_environment","organizational_values", "management_style", "team_structure", "decision_making_process"),
 
 > Write the comprehensive results "Organization Background" into
 [Organization_name(Acronym)background.md] file (Retain ATS)
