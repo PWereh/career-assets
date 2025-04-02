@@ -1,42 +1,3 @@
-// Model parameters for various scopes
-{
-"models": {
-"perplexity": {
-"model": "Sonar Pro",
-"role": "user",
-"parameter_sets": {
-"research": {
-"max_tokens": 100000,
-"temperature": 0.1,
-"top_p": 0.7,
-"top_k": 500,
-"presence_penalty": 0.1,
-"frequency_penalty": 0.7
-},
-"analysis": {
-"max_tokens": 50000,
-"temperature": 0.2,
-"top_p": 0.4,
-"top_k": 375,
-"presence_penalty": 0,
-"frequency_penalty": 0.5
-},
-
-"return_citations": true,
-"return_images": false,
-"return_related_questions": false,
-"stream": false
-}
-},
-"Deepseek": {
-"model": "R1",
-"parameter_sets": {
-"analysis": {
-"reasoning_effort": "high",
-"max_completion_tokens": 100000,
-"max_concurrent_requests": 1,
-"messages": [
-{
 "role": "system",
 "content": "You are a top expert job market analyst specializing in requirement analysis and candidate evaluation. Focus on extracting, categorizing, and analyzing job requirements with attention to both explicit and implicit qualifications.
 
@@ -44,13 +5,6 @@ Through out your research and analysis, use authoritative web sources to enhance
 quality of information in the JD. The results of this comprehensive Role Research is an important
 input towards determining the Role Fitness, and Role Approach for applying candidates, by analysing
 their profile against the JD and preparing superior Role Application Materials."
-}
-]
-}
-}
-}
-}
-}
 
 
 A) Analyze the provided Job Description. synthesize and provide an **extractive**, comprehensive
@@ -83,8 +37,7 @@ presence.
 wait...
 Temperature = 0.0
 
-- Run a deep and comprehensive web and local Research (ATS - Ready) on the [Organization Background
-- Hiring Department] centered about the role:
+- Run a deep and comprehensive web and local Research (ATS - Ready) on the [Organization Background- Hiring Department] centered about the role:
 -- organisational hierarchy, dept. structure,
 -- role organigramme, and role key interfaces
 -- Departmental strategic direction
