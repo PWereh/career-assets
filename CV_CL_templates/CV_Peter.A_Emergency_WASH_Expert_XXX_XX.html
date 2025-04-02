@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="en">
+    <!-- Document Head - Contains metadata, styles, and font imports -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peter A. Wereh - WASH & CLIMATE RESILIENCE EXPERT</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!-- Styles - Core styling and responsive design -->
+        <style>
+            /* Root variables - Color scheme and base values */
+            :root {
+                --primary-color: #3498db;
+                --secondary-color: #2c3e50;
+                --tertiary-color: #417295;
+                --text-color: #333;
+                --background-color: #f8f9fa;
+                --card-color: rgba(255, 255, 255, 0.9);
+            }
+            /* Base styles - Document foundation */
+            body {
+                font-family: "Poppins", sans-serif;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                line-height: 1.3;
+                margin: 0;
+                padding: 0;
+                font-size: 10px;
+                counter-reset: page;
+            }
+
+            /* Layout components - Structure and containers */
+            .container {
+                max-width: 210mm;
+                margin: 0mm auto;
+                padding: 0;
+            }
+            .page {
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                position: relative;
+                width: 210mm;
+                height: 297mm;
+                padding: 15px;
+                box-sizing: border-box;
+                page-break-after: always;
+                counter-increment: page;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-color),
+                    var(--secondary-color)
+                );
+                color: white;
+                padding: 20px;
+                margin: -15px -15px 12px -15px;
+            }
+            .name-plate {
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                padding-right: 65px;
+                border-radius: 6px;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .name-plate h1 {
+                margin: 0px 0px 20px 0px;
+                font-size: 36px;
+                font-weight: 600;
+            }
+            .name-plate h2 {
+                margin: 2px 0px 0px 0px;
+                font-size: 20px;
+                font-variant: small-caps;
+                font-weight: 500;
+            }
+            .contact-card {
+                background-color: rgba(255, 255, 255, 0);
+                padding: 8px;
+                border-radius: 6px;
+                max-width: 320px;
+                flex: 1;
+                margin: 0px 0px 0px 102.5px;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 4px 12px;
+                justify-content: flex-start;
+            }
+            .contact-info a,
+            .contact-info span {
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+                display: flex;
+                align-items: left;
+                gap: 8px;
+                padding: 4px 4px;
+                font-size: 12px;
+            }
+            .contact-info svg {
+                height: 16px;
+                width: 16px;
+            }
+            .content {
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+            }
+            .main-column {
+                flex: 2;
+            }
+            .side-column {
+                flex: 1;
+            }
+            .section {
+                background-color: white;
+                padding: 5px;
+                margin-bottom: 15px;
+                border-radius: 6px;
+                box-shadow:
+                    0 2px 4px rgba(0, 0, 0, 0.05),
+                    0 1px 2px rgba(0, 0, 0, 0.08);
+                border: 1px solid rgba(0, 0, 0, 0.03);
+            }
+            .section p {
+                margin-left: 20px;
+            }
+            .section-title {
+                color: var(--primary-color);
+                margin: 0px 0 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .section-title svg {
+                width: 14px;
+                height: 14px;
+            }
+            .summary-item p {
+                color:;
+                line-height: 1.2;
+                margin: 10px 0px 0px 20px;
+                padding: 0;
+                font-size: 11px;
+            }
+            .experience-item {
+                margin-bottom: 6px;
+            }
+            .experience-item h4 {
+                margin: 10px 0 0px 22px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .experience-item h4 strong {
+                color: var(--secondary-color);
+            }
+            .experience-item h4 span {
+                color: #999999;
+            }
+            .experience-item p {
+                margin: 5px 0px 0px 23px;
+                color: #999999;
+                font-size: 11px;
+                position: relative;
+                padding-left: 5px;
+            }
+            .experience-item p::before {
+                content: "";
+                position: absolute;
+                left: -1px;
+                top: 0;
+                height: 100%;
+                width: 1px;
+                background-color: #99999980;
+            }
+            .experience-item ul,
+            ol {
+                padding-left: 42px;
+                margin: 2px 0;
+                list-style-type: square;
+            }
+            li {
+                margin-bottom: 2px;
+                font-size: 10px;
+                line-height: 1.2;
+            }
+            .education-item {
+                margin-bottom: 6px;
+            }
+            .education-item h4 {
+                margin: 10px 0 5px 10px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .education-item h4 strong {
+                color: var(--secondary-color);
+            }
+            .education-item h4 span {
+                color: #999999;
+            }
+            .education-item p {
+                margin: 0 0 10px 10px;
+                color: #999999;
+                font-size: 11px;
+                position: relative;
+                padding-left: 5px;
+            }
+            .education-item p::before {
+                content: "";
+                position: absolute;
+                left: -1px;
+                top: 0;
+                height: 100%;
+                width: 1px;
+                background-color: #99999980;
+            }
+            .education-item ul,
+            ol {
+                padding-left: 17px;
+                margin: 2px 0;
+                list-style-type: square;
+            }
+            li {
+                margin-bottom: 2px;
+                font-size: 11px;
+            }
+            /* Career timeline (DO NOT ALTER) */
+            .timeline {
+                position: relative;
+                padding-left: 16px;
+                padding-right: 0px;
+            }
+
+            .timeline::before {
+                content: "";
+                position: absolute;
+                left: 3px;
+                right: 0px;
+                top: 12px;
+                bottom: 12px;
+                width: 10px;
+                background: linear-gradient(
+                    to bottom,
+                    transparent,
+                    #e6e9ec 2%,
+                    #e6e9ec 98%,
+                    transparent
+                );
+                border-radius: 2px;
+                filter: blur(0.5px);
+            }
+
+            .timeline-entry {
+                position: relative;
+                margin-bottom: 4px;
+                padding-left: 12px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            .year {
+                min-width: 32px;
+                font-size: 10px;
+                font-weight: 500;
+                color: #999;
+            }
+
+            .timeline-entry.featured .year {
+                color: #3498db;
+            }
+
+            .timeline-entry.dormant .year {
+                color: #999;
+            }
+
+            .timeline-entry::before {
+                content: "";
+                position: absolute;
+                left: -13px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                border: 1px solid white;
+                z-index: 1;
+            }
+
+            .timeline-entry.featured::before {
+                background: #3498db;
+                box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+            }
+
+            .timeline-entry.dormant::before {
+                background: #95a5a6;
+                box-shadow: 0 0 0 2px rgba(149, 165, 166, 0.1);
+            }
+
+            .entry-content {
+                font-size: 10px;
+                line-height: 1.2;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            .featured .entry-content {
+                font-weight: 500;
+                color: #2c3e50;
+            }
+
+            .dormant .entry-content {
+                color: #666;
+            }
+
+            .role {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .location {
+                font-size: 9px;
+                padding: 1px 6px;
+                border-radius: 3px;
+                background: #f8f9fa;
+                white-space: nowrap;
+            }
+
+            .featured .location {
+                color: #3498db;
+                background: rgba(52, 152, 219, 0.1);
+            }
+
+            .dormant .location {
+                color: #95a5a6;
+                background: rgba(149, 165, 166, 0.1);
+            }
+            .skill-item {
+                font-size: 12px;
+                color: var(--text-color);
+            }
+            .skill-name,
+            .skill-name span,
+            .skill-item span {
+                margin: 0 0 5px 0px;
+                color: #999999 !important;
+                font-size: 10px !important;
+                position: relative;
+                padding-left: 5px;
+            }
+            .skill-bar {
+                background-color: #e0e0e0;
+                height: 5px;
+                border-radius: 2px;
+                margin: 0 0 14px 10px;
+                width: calc(100% - 32px);
+            }
+            .skill-level {
+                background-color: var(--primary-color);
+                height: 100%;
+                border-radius: 2px;
+            }
+
+            .references-container {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            .reference-item {
+                padding: 4px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 4px;
+            }
+            .reference-item h4 {
+                margin: 0 0 3px 0;
+                font-size: 11px;
+                color: var(--secondary-color);
+            }
+            .reference-item p {
+                margin: 0 0 2px 0;
+                font-size: 10px;
+                color: #999999;
+            }
+            .reference-item ul {
+                list-style: none;
+                padding: 0;
+                margin: 5px 0 0 0;
+            }
+            .reference-item li {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 10px;
+                color: #999999;
+                margin-bottom: 2px;
+            }
+            .reference-item svg {
+                width: 12px;
+                height: 12px;
+                stroke: var(--primary-color);
+            }
+            .footer {
+                background-color: var(--tertiary-color);
+                color: white;
+                padding: 8px 25px;
+                font-size: 11px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: grid;
+                grid-template-columns: 25px 1fr 25px;
+                align-items: center;
+                gap: 15px;
+            }
+            .footer-text {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+            }
+            .footer-text span {
+                padding: 0 8px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            .footer-text span:last-child {
+                border-right: none;
+            }
+            .footer-text .page-number::after {
+                content: counter(page) " of 2";
+            }
+            .skype-icon {
+                justify-self: start;
+                margin-left: 0;
+            }
+            .linkedin-icon {
+                justify-self: end;
+                margin-right: 0;
+            }
+            .footer img {
+                width: 20px;
+                height: 20px;
+                opacity: 0.8;
+                transition: opacity 0.3s ease;
+            }
+            .footer img:hover {
+                opacity: 1;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 10px;
+            }
+            th,
+            td {
+                padding: 2px 4px;
+                text-align: left;
+            }
+            @page {
+                margin: 0;
+                size: A4;
+            }
+
+            /* Print styles - Optimize for printing */
+            @media print {
+                body {
+                    background-color: white;
+                    margin: 0;
+                    padding: 0;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .container {
+                    margin: 0;
+                    padding: 0;
+                    box-shadow: none;
+                }
+                .page {
+                    margin: 0;
+                    padding: 15px;
+                    box-shadow: none;
+                    width: 210mm;
+                    height: 297mm;
+                    page-break-after: always;
+                }
+                .header {
+                    margin: -15px -15px 12px -15px;
+                    background: linear-gradient(
+                        135deg,
+                        var(--primary-color),
+                        var(--secondary-color)
+                    ) !important;
+                }
+                .name-plate {
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                }
+                .section {
+                    background-color: var(--card-color) !important;
+                    break-inside: avoid;
+                }
+                .footer {
+                    background-color: var(--tertiary-color) !important;
+                    position: fixed;
+                    bottom: 0;
+                }
+                .skill-bar {
+                    background-color: #e0e0e0 !important;
+                }
+                .skill-level {
+                    background-color: var(--primary-color) !important;
+                }
+                .contact-info a,
+                .contact-info span {
+                    color: rgba(255, 255, 255, 0.6) !important;
+                }
+                ul {
+                    break-inside: avoid;
+                }
+                .experience-item {
+                    break-inside: avoid;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Main Container - A4 size container for the CV -->
+        <div class="container">
+            <!-- First Page - Primary information and key qualifications -->
+            <div class="page">
+                <!-- Header - Personal branding and contact details -->
+                <header class="header">
+                    <div class="name-plate">
+                        <h1>PETER A. WEREH</h1>
+                        <h2>WASH & CLIMATE RESILIENCE EXPERT</h2>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-info">
+                            <a href="tel:+254727358392">
+                                <i data-feather="phone"></i>+254 727 358 392
+                            </a>
+                            <a href="wereh.achieng@gmail.com">
+                                <i data-feather="mail"></i
+                                >wereh.achieng@gmail.com
+                            </a>
+                            <a href="mailto:wereh.achieng@outlook.com">
+                                <i data-feather="mail"></i
+                                >wereh.achieng@outlook.com
+                            </a>
+                            <span>
+                                <i data-feather="map-pin"></i>Nairobi, Kenya
+                            </span>
+                        </div>
+                    </div>
+                </header>
+                <!-- Content Area - Two-column layout for optimal information presentation -->
+                <div class="content">
+                    <!-- Main Column - Core professional information -->
+                    <div class="main-column">
+                        <!-- Professional Summary Section - Brief overview of expertise -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="user"></i>Professional Summary
+                            </h3>
+                            <div class="summary-item">
+                                <p>
+                                    Senior contributor with 13+ years of broad
+                                    expertise driving WASH programs across
+                                    Africa, the Middle East, and Latin America.
+                                    Experienced in providing hands-on technical
+                                    assistance across various geographies,
+                                    focusing on sector standards, donor
+                                    compliance, and evidence-based
+                                    interventions.
+                                </p>
+                                <p>
+                                    Adept at resourcing programs through
+                                    innovative financing and skilled at
+                                    leveraging strategic partnerships to expand
+                                    the reach and impact of WASH programs.
+                                </p>
+                                <p>
+                                    Conversant with integrated project design,
+                                    systems Strengthening, climate-smart
+                                    approaches, localisation & capacity
+                                    building, and market-oriented WASH solutions
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Professional Experience Section - Detailed work history -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="briefcase"></i>Professional
+                                Experience
+                            </h3>
+                            <div class="experience-item">
+                                <h4>
+                                    <strong
+                                        >Project Officer (WASH & Basic
+                                        Infrastructure)</strong
+                                    ><span>
+                                        | IOM-UN | Sudan | Feb 2024 -
+                                        Present</span
+                                    >
+                                </h4>
+                                <p>
+                                    Sudan Conflict Crisis Response | Darfur
+                                    Region | 2.2M Conflict afflicted IDPs <br />
+                                    Donors: CERF, BHA | | USD 13+ Million
+                                </p>
+                                <ul>
+                                    <li>
+                                        Led development of multi-year WASH
+                                        strategy focusing on
+                                        Humanitarian-Development-Peace Nexus and
+                                        climate resilience for conflict-affected
+                                        populations
+                                    </li>
+                                    <li>
+                                        Reviewed RRF funding proposals by
+                                        subgranee partners, ensuring compliance
+                                        to technical and sector standards
+                                    </li>
+                                    <li>
+                                        Chaired Technical Working Group
+                                        responsible for Sudan WASH Sector Needs
+                                        Assessment and Analysis Strategy
+                                        development
+                                    </li>
+                                    <li>
+                                        Developed comprehensive funding
+                                        proposals and concept notes for
+                                        countrywide WASH interventions targeting
+                                        displacement-affected populations
+                                    </li>
+                                    <li>
+                                        Coordinated at high level country
+                                        Strategic Advisory Groups (SAG) and
+                                        Sector fora.
+                                    </li>
+                                    <li>
+                                        Cross-border WASH facilitation between
+                                        Sudan and Chad, improving access to
+                                        critical WASH supplies
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key metrics:</strong> Established
+                                    sustainable WASH services reaching 2.2
+                                    million IDPs across 18 states through
+                                    localisation, Conflict sensitive
+                                    programming, and climate-adaptive solutions.
+                                </p>
+                            </div>
+                            <!--                            
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>WASH Delegate</strong
+                                    ><span>
+                                        | Canadian Red Cross | Roster | Sep 2021
+                                        - Present</span
+                                    >
+                                </h4>
+                                <p>
+                                    Rapid Response Mechanism | Global Red Cross
+                                    Movement standby | IFRC/ICRC/PNS <br />
+                                    Donors: Various | USD -
+                                </p>
+                                <ul>
+                                    <li>
+                                        Surge support for National Societies,
+                                        IFRC rapid response management systems,
+                                        and ICRC to establish project management
+                                        systems for their water and sanitation
+                                        programs during emergencies.
+                                    </li>
+                                    <li>
+                                        Support for National Society Development
+                                        initiatives using core RCRC strategies
+                                        and technical guidelines.
+                                    </li>
+                                    <li>
+                                        Available support and liaise closely
+                                        with all WASH-supported activities and
+                                        team members to provide analysis and
+                                        reports as required
+                                    </li>
+                                    <li>
+                                        Developed comprehensive funding
+                                        proposals and concept notes for
+                                        countrywide WASH interventions targeting
+                                        displacement-affected populations
+                                    </li>
+                                    <li>
+                                        Mentored and trained with the Canadian
+                                        Red Cross Emergency Response Units in
+                                        professional/technical activities.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key metrics:</strong> Deployable
+                                    within 72hrs to support during WASH
+                                    emergencis through managed interactions, and
+                                    trained with Canadian Red Cross Emergency
+                                    Response Units.
+                                </p>
+                            </div>
+                            -->
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>WASH Specialist</strong
+                                    ><span>
+                                        | Norwegian Refugee Council | Kenya &
+                                        Tanzania | Aug 2021 - Aug 2022</span
+                                    >
+                                </h4>
+                                <p>
+                                    Protracted Emergencies | Kakuma, Dadaab,
+                                    Nyarugusu, Nduta, Mtendeli | 500,000+ PoC
+                                    <br />Donors:UNHCR, SIDA, NMFA, FCDO | USD
+                                    2.38M
+                                </p>
+                                <ul>
+                                    <li>
+                                        Developed strategies and technical
+                                        Standard Operating Procedures (SOPs) for
+                                        delivering Water and Sanitation Services
+                                        for IDP & host communities.
+                                    </li>
+                                    <li>
+                                        Led WASH fundraising, developing funding
+                                        proposals and budgets and monitoring of
+                                        donor priorities.
+                                    </li>
+                                    <li>
+                                        Commissioned market-based, and
+                                        climate-resilient approaches in WASH
+                                        programming.
+                                    </li>
+                                    <li>
+                                        Developed road-map to sustainable WASH
+                                        through, systems strengthening,
+                                        cost-recovery, and market-driven
+                                        solutions.
+                                    </li>
+                                    <li>
+                                        Facilitated systematic training and
+                                        capacity building for technical staff
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key metrics:</strong> Secured USD
+                                    2.38M funding, implemented WASH solutions
+                                    sustaining 82% service coverage for 537,000+
+                                    beneficiaries while guiding cross-functional
+                                    teams in remote and on-site settings
+                                </p>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>WASH Coordinator</strong
+                                    ><span>
+                                        | International Medical Corps | Nigeria
+                                        Sep 2018 - Mar 2019</span
+                                    >
+                                </h4>
+                                <p>
+                                    WASH/Nutrition/Protection Emergency and
+                                    Recovery Response | Northeast Nigeria |
+                                    283,000 Insergency Afflicted PoC<br />Donors:
+                                    ECHO, OFDA, WFP, and Dutch Grant | USD 4.5M
+                                </p>
+                                <ul>
+                                    <li>
+                                        Managed integrated WASH-Health serving
+                                        70,000 IDPs, establishing sustainable
+                                        community based WASH management systems
+                                    </li>
+
+                                    <li>
+                                        Coordinated internally with the Finance
+                                        and Logistics teams in proposal
+                                        development, and budget monitoring to
+                                        meet donor priorities
+                                    </li>
+                                    <li>
+                                        Led technical coordination with
+                                        government agencies and humanitarian
+                                        partners
+                                    </li>
+                                    <li>
+                                        Partnered with Médecins du Monde
+                                        establishing specialized WASH
+                                        infrastructure for therapeutic feeding
+                                        centers and cholera treatment units
+                                    </li>
+                                    <li>
+                                        Designed market-based programming
+                                        initiatives to establish sustainable
+                                        supply and distribution of Hygine and
+                                        Mensural Health Managegment (MHM) Kits
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key metrics:</strong>Managed USD
+                                    4.8M WASH portfolio delivering sustainable
+                                    solutions to 70,000 conflict-affected IDPs
+                                    in hard to reach & fragile locations
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Side Column - Supporting qualifications and skills -->
+                    <div class="side-column">
+                        <!-- Career timeline - featured and dormant roles to match main column experience entries -->
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="clock"></i>Career Timeline
+                            </h3>
+                            <div class="timeline">
+                                <div class="timeline-entry featured">
+                                    <span class="year">2024</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >Project Officer WASH, IOM</span
+                                        >
+                                        <span class="location">Sudan</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry dormant">
+                                    <span class="year">2022</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >WASH Delegate, CRC</span
+                                        >
+                                        <span class="location">Roster</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry featured">
+                                    <span class="year">2021</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >WASH Specialist, NRC</span
+                                        >
+                                        <span class="location"
+                                            >Kenya & Tanzania</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry featured">
+                                    <span class="year">2018</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >WASH Coordinator, IMC</span
+                                        >
+                                        <span class="location">Nigeria</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry featured">
+                                    <span class="year">2017</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >WASH Delegate, IFRC</span
+                                        >
+                                        <span class="location"
+                                            >Sierra Leone</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry featured">
+                                    <span class="year">2016</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >Sanitation Expert, COWI</span
+                                        >
+                                        <span class="location">Kenya</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry dormant">
+                                    <span class="year">2016</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >WASH Coordinator, IMC</span
+                                        >
+                                        <span class="location">Ecuador</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry featured">
+                                    <span class="year">2014</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >PHE Technical Lead, Oxfam</span
+                                        >
+                                        <span class="location">Jordan</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry featured">
+                                    <span class="year">2013</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >PHE Team Leader, Oxfam</span
+                                        >
+                                        <span class="location"
+                                            >South Sudan</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry dormant">
+                                    <span class="year">2012</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >WASH Consultant, Oxfam</span
+                                        >
+                                        <span class="location">Ethiopia</span>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-entry dormant">
+                                    <span class="year">2007</span>
+                                    <div class="entry-content">
+                                        <span class="role"
+                                            >Engineer, GIBB Africa Ltd</span
+                                        >
+                                        <span class="location"
+                                            >East Africa</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Technical Skills - Core competencies with skill levels -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="award"></i> Core Competencies
+                            </h3>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Market-Based WASH programming</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-level"
+                                        style="width: 80%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Programme Design & Management</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-level"
+                                        style="width: 95%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span
+                                        >Business Development &
+                                        Fundraising</span
+                                    >
+                                </div>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-level"
+                                        style="width: 85%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span>Leadership & Capacity Building</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-level"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">
+                                    <span
+                                        >Strategic Stakeholder Management
+                                    </span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-level"
+                                        style="width: 90%"
+                                    ></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section - Academic qualifications and certifications -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="book"></i>Education
+                            </h3>
+                            <div class="education-item">
+                                <h4>
+                                    BSc. Water and Environmental Engineering
+                                </h4>
+                                <p>Egerton University, Kenya | 2002-2007</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>
+                                    Masters in Business Administration (MBA)
+                                </h4>
+                                <p>
+                                    University of the People, USA | 2023
+                                    <i>(Ongoing)</i>
+                                </p>
+                            </div>
+                            <div class="education-item">
+                                <h4>Registered Graduate Engineer</h4>
+                                <p>
+                                    Engineers Registration Board Kenya
+                                    <i>(Ongoing)</i>
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="check-circle"></i
+                                >Certifications
+                            </h3>
+                            <div class="education-item">
+                                <ul>
+                                    <li>
+                                        WASH Systems Strengthening (IRC) | 2018
+                                    </li>
+                                    <li>
+                                        Market Based Programming (NRC) | 2022
+                                    </li>
+                                    <li>WASH in Emergencies (IFRC) | 2021</li>
+                                    <li>
+                                        Programme Planning and Management (IFRC)
+                                        | 2021
+                                    </li>
+                                    <li>
+                                        Coordination in Emergencies (IFRC) |
+                                        2021
+                                    </li>
+                                    <li>
+                                        Advanced Hydraulic modelling (BI) |
+                                        2016-2020
+                                    </li>
+                                    <li>
+                                        IWRM and Climate Resilience(CapNet) |
+                                        2024
+                                    </li>
+                                    <li>PRIMA/PRISM (IOM) | 2024</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Footer - Page information and social links -->
+                <footer class="footer">
+                    <img
+                        class="skype-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/3/31/Skype.png?20221109081448"
+                        alt="Skype"
+                    />
+                    <div class="footer-text">
+                        <span>&copy; 2025</span>
+                        <span>Peter A. Wereh</span>
+                        <span>WASH & CLIMATE RESILIENCE EXPERT</span>
+                        <span class="page-number"></span>
+                    </div>
+                    <img
+                        class="linkedin-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                        alt="LinkedIn"
+                    />
+                </footer>
+            </div>
+
+            <!-- Second Page - Continued experience and additional qualifications -->
+            <div class="page">
+                <!-- Header - Repeated for consistency -->
+                <header class="header">
+                    <div class="name-plate">
+                        <h1>PETER A. WEREH</h1>
+                        <h2>WASH & CLIMATE RESILIENCE EXPERT</h2>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <div class="main-column">
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="briefcase"></i>Professional
+                                Experience Continued
+                            </h3>
+
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>WASH Delegate</strong
+                                    ><span> | IFRC | Sierra Leone | 2018</span>
+                                </h4>
+                                <p>
+                                    Floods Response | Freetown | 26,000
+                                    beneficiaries <br />Donors: OFID, ECHO | USD
+                                    4.36M
+                                </p>
+                                <ul>
+                                    <li>
+                                        Directed Red Cross Society emergency
+                                        WASH response for 26,000 flood/mudslide
+                                        -affected people
+                                    </li>
+                                    <li>
+                                        Developed adapted social behavior change
+                                        communication protocols with British Red
+                                        Cross and partner National Societies
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key metrics:</strong>
+                                    Restored access and expanded urban water
+                                    supply and sanitation systems coverage in
+                                    flood-affected areas within Freetown, using
+                                    SBCC to support community resilience
+                                </p>
+                            </div>
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>Sanitation Expert</strong
+                                    ><span>
+                                        | COWI A/S | Kenya | Oct 2016 - Jan
+                                        2018</span
+                                    >
+                                </h4>
+                                <p>
+                                    Development of 40 years sanitation
+                                    Masterplan for Nairobi City and Selected
+                                    Satellite Towns | Project components –
+                                    Immediate Urgent Works, Medium and Long-term
+                                    Works <br />Donors: Multi-Lateral donors |
+                                    USD 50+ Million
+                                </p>
+                                <ul>
+                                    <li>
+                                        Led the prioritization of investments
+                                        for Urgent works for existing wastewater
+                                        facilities, and decentralized sanitation
+                                        solutions for informal settlements
+                                    </li>
+                                    <li>
+                                        Developed 500km of GIS based hydraulic
+                                        Sewerage models, identifying
+                                        cost-effective phasing for expansions.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key Matrics:</strong> Developed a
+                                    phased USD 50M investment plan, improving
+                                    coverage and readiness for an 8.5M projected
+                                    population by 2040
+                                </p>
+                            </div>
+
+                            <!--
+
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>WASH Coordinator</strong
+                                    ><span>
+                                        | International Medical Corps | Ecuador
+                                        | May 2016 - Aug 2016</span
+                                    >
+                                </h4>
+                                <p>
+                                    Post-Earth-Quake Emergency Response |
+                                    Pedernales, Jama. Porto Viejo<br />Donors:
+                                    Private Donor Funds
+                                </p>
+                                <ul>
+                                    <li>
+                                        Rapidly re-established WASH access for
+                                        in earthquake-affected areas, utilizing
+                                        local markets to secure vital WASH
+                                        supplies.
+                                    </li>
+                                    <li>
+                                        Rapidly re-established WASH access for
+                                        in earthquake-affected areas
+                                    </li>
+                                    <li>
+                                        Designed specialized sanitation systems
+                                        meeting IPC standards for emergency
+                                        clinics & reconstructed healthcare WASH
+                                    </li>
+                                    <li>
+                                        In partnership with WFP, for
+                                        distribution of family Hygiene and
+                                        Mensural Health Management (MHM) kits
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key Metrics:</strong> Implemented
+                                    rapid WASH solutions restoring access to
+                                    15,000 families, utilizing emergency market
+                                    analysis to enhance access
+                                </p>
+                            </div>
+-->
+                            <div class="experience-item">
+                                <h4>
+                                    <strong
+                                        >Public Health Engineering Technical
+                                        Team Leader</strong
+                                    ><span>
+                                        | Oxfam GB | Jordan | 2014 - 2016</span
+                                    >
+                                </h4>
+                                <p>
+                                    Syrian Refugee Response | Zaatari Camp |
+                                    100,000 refugees | Water, Wastewater &
+                                    Hygiene Promotion <br />Donors: UNICEF | USD
+                                    16 Million
+                                </p>
+                                <ul>
+                                    <li>
+                                        Led design and implementation of WASH
+                                        infrastructure through Cash-for-Work
+                                        initiatives
+                                    </li>
+                                    <li>
+                                        Trasitioned from communal to household
+                                        WASH level of service through community
+                                        consultations
+                                    </li>
+                                    <li>
+                                        Managed $11M construction contracts and
+                                        international contractors
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key Metrics:</strong> Implemented
+                                    95km water network and 37km sewerage system,
+                                    raising water availability to 35
+                                    L/person/day and reduced water losses from
+                                    40% to 15% through system optimization
+                                </p>
+                            </div>
+
+                            <div class="experience-item">
+                                <h4>
+                                    <strong>PHE Team Leader</strong
+                                    ><span>
+                                        | Oxfam GB | South Sudan |
+                                        2013-2014</span
+                                    >
+                                </h4>
+                                <p>
+                                    Emergency and Recovery WASH Intervention |
+                                    Upper Nile State | 45,000 Refugees<br />Donors:
+                                    UNHRR, BPRM | USD 7.5 Million
+                                </p>
+                                <ul>
+                                    <li>
+                                        Designing and implementing the 8km
+                                        pumping main and 34km gravity
+                                        distribution network including
+                                        solar-boreholes and rehabilitations of
+                                        motorized wells and hand pumps;
+                                    </li>
+                                    <li>
+                                        implementing 1500 shared family latrines
+                                        and bathing shelters, with Community
+                                        Lead Total Sanitation program
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Key Metrics:</strong> Achieved 95%
+                                    latrine coverage in 9 months, drastically
+                                    reducing waterborne diseases
+                                </p>
+                            </div>
+
+                            <section class="section">
+                                <h3 class="section-title">
+                                    <i data-feather="target"></i>Key
+                                    Achievements
+                                </h3>
+                                <!--
+                                <p>
+                                  Below is a selection of key achievements
+                                    from previous experience that best
+                                    demostrates the fitness and capacity for
+                                    this role
+                                </p>
+                                -->
+                                <div class="experience-item">
+                                    <ul>
+                                        <li>
+                                            Secured over USD 34M in various WASH funding
+                                            across major donors including UNICEF,
+                                            ECHO, UNHCR, CERF, OFDA, FCDO & BHA.
+                                        </li>
+                                        <li>
+                                            Implemented sustainable WASH for
+                                            over 3 million beneficiaries across
+                                            8 countries
+                                        </li>
+                                        <!--                                        <li>
+                                            Developed sucessful market-based
+                                            WASH strategies for multiple
+                                            missions
+                                        </li> 
+                                        -->
+                                        <li>
+                                            Established climate-resilient
+                                            infrastructure in challenging
+                                            operational contexts, serving 750K+
+                                            beneficiaries across 4 countries
+                                        </li>
+                                        <li>
+                                            Built capacity of 100+ local staff
+                                            in WASH technical skills and program
+                                            management
+                                        </li>
+                                        <li>
+                                            Development of WASH SOPs,
+                                            methodologies, Protocols, and
+                                            Technical guidance for improved
+                                            programme quality
+                                        </li>
+                                        <!-- <li>
+                                            Developing technical standards and
+                                            guidelines that have been adopted
+                                            across multiple country programs
+                                        
+                                        </li> -->
+                                        <li>
+                                            Coordinated Multi-Stakeholder
+                                            Partnerships, involving donors,
+                                            government authorities, and
+                                            grassroots implementing partners
+                                        </li>
+                                        <li>
+                                            Elevated Community Participation in
+                                            sanitation & water committees, with
+                                            robust hygiene promotion and
+                                            community mobilisation
+                                        </li>
+                                        <li>
+                                            Influenced sector policy and
+                                            regulations to promote Diversity
+                                            Equity amd Inclusivity in WASH
+                                            services delivery
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+
+                    <div class="side-column">
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="award"></i>Additional Training
+                            </h3>
+                            <div class="education-item">
+                                <ul>
+                                    <li>Operations Management (IFRC)</li>
+                                    <li>
+                                        Project Planning and Management
+                                        (Humentum)
+                                    </li>
+                                    <li>
+                                        Proposal Writing & Donor Compliance
+                                        (ECHO-USAID-GAC)
+                                    </li>
+                                    <li>FIDIC Contract Administration</li>
+                                    <li>IMPACT (CRC)</li>
+                                    <li>
+                                        Surge Information Management (IFRC))
+                                    </li>
+                                    <li>
+                                        Prevention of Sexual Exploitation
+                                        (Oxfam)
+                                    </li>
+                                    <li>Sphere Standards in Practice</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Tools and Software Skills - Technical proficiencies matching job requirements -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="tool"></i>Tools and Software
+                                Skills
+                            </h3>
+                            <div class="education-item">
+                                <ul>
+                                    <li>
+                                        Hydraulic Modeling: Water/sewerGEMS,
+                                        InfoWorks, EPA-SWMM
+                                    </li>
+                                    <li>GIS Software: QGIS, ArcGIS, MapInfo</li>
+                                    <li>
+                                        CAD Software: AutoCAD Civil 3D, Inventor
+                                    </li>
+                                    <li>
+                                        Project Management: MS Project,
+                                        Primavera P6
+                                    </li>
+                                    <li>
+                                        Data Analysis: Power BI, Advanced Excel
+                                    </li>
+                                    <li>
+                                        Collaboration Tools: MS Teams,
+                                        SharePoint
+                                    </li>
+                                    <li>
+                                        Artificial Intelligence: Agentic WASH,
+                                        WASH-RAG, WASH-Knowledge Graphs
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Languages Section - Display language proficiencies -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="globe"></i>Languages
+                            </h3>
+                            <table>
+                                <tr>
+                                    <th>Language</th>
+                                    <th>Speak</th>
+                                    <th>Read</th>
+                                    <th>Write</th>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                </tr>
+                                <tr>
+                                    <td>Swahili</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                    <td>Fluent</td>
+                                </tr>
+                                <tr>
+                                    <td>French</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Arabic</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                    <td>Basic</td>
+                                </tr>
+                            </table>
+                        </section>
+                        <!-- References Section - Professional references with contact details -->
+                        <section class="section">
+                            <h3 class="section-title">
+                                <i data-feather="users"></i>References
+                            </h3>
+                            <div class="references-container">
+                                <div class="reference-item">
+                                    <h4>
+                                        <strong>Tomas Lopez de Bufala</strong>
+                                    </h4>
+                                    <p>Chief of WASH</p>
+                                    <p>UNICEF, Angola</p>
+                                    <ul>
+                                        <li>
+                                            <i data-feather="phone"></i> (+244)
+                                            912 653 016
+                                        </li>
+                                        <li>
+                                            <i data-feather="mail"></i>
+                                            tomaslopezdebufala@gmail.com
+                                        </li>
+                                        <li>
+                                            <i
+                                                data-feather="message-circle"
+                                            ></i>
+                                            TOMASL.UNOPS
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="reference-item">
+                                    <h4><strong>Gyula Kadar</strong></h4>
+                                    <p>Regional Operations Manager</p>
+                                    <p>IFRC, Sierra Leone</p>
+                                    <ul>
+                                        <li>
+                                            <i data-feather="phone"></i> (+232)
+                                            79 423686
+                                        </li>
+                                        <li>
+                                            <i data-feather="mail"></i>
+                                            gyula.kadar@ifrc.org
+                                        </li>
+                                        <li>
+                                            <i
+                                                data-feather="message-circle"
+                                            ></i>
+                                            GYULA.KADAR10
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="reference-item">
+                                    <h4><strong>Syed Yasir Ahmad</strong></h4>
+                                    <p>Global WASH Advisor</p>
+                                    <p>International Medical Corps (IMC) UK</p>
+                                    <ul>
+                                        <li>
+                                            <i data-feather="phone"></i> (+44)
+                                            7424 927 611
+                                        </li>
+                                        <li>
+                                            <i data-feather="mail"></i>
+                                            syahmad@internationalmedicalcorps.org.uk
+                                        </li>
+                                        <li>
+                                            <i
+                                                data-feather="message-circle"
+                                            ></i>
+                                            SYEDYASIRAHMAD
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Footer - Page information and social links -->
+                <footer class="footer">
+                    <img
+                        class="skype-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/3/31/Skype.png?20221109081448"
+                        alt="Skype"
+                    />
+                    <div class="footer-text">
+                        <span>&copy; 2025</span>
+                        <span>Peter A. Wereh</span>
+                        <span>WASH & CLIMATE RESILIENCE EXPERT</span>
+                        <span class="page-number"></span>
+                    </div>
+                    <img
+                        class="linkedin-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                        alt="LinkedIn"
+                    />
+                </footer>
+            </div>
+        </div>
+
+        <!-- Scripts - Icon replacement and dynamic functionality -->
+        <script>
+            feather.replace({ width: 14, height: 14 });
+        </script>
+    </body>
+</html>
