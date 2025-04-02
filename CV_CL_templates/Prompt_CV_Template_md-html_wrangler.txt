@@ -1,0 +1,16 @@
+1. Develop a skeleton with an outline of the attached cv template [Base_CV_Template_2024.html] in markdown. Name it [Base_CV_Template_2024.md].
+
+- Important: The file will be used by AI to write the draft CV to be mapped 1:1 with the Base_CV_Template_2024.html. Therefore ensure structural, schematic and semantical celerity.
+
+- Attention!: include useful AI-friendly information from the code comments and the guide in the CV_Prompt.md to instruct the writing AI, how to fill the Base_CV_Template_2024.md accurately.
+-- embed backward and foward logic
+-- Emphasise high precision processing.
+
+- Important: the content of the CV will be generated using a graphRAG using a knowledge graph of the candidate againt a preprocessed job profile fitness analysis of the candidate capabilities against the job description. Therefore include precise cypher code for semantic mapping preferably through graph  traversal, but other suitable  methods are allowed when forging the content
+-- The knowledge gragh will be accessed through claude mpc either mcp-neo4j servers or mcp-memory server update the artifacts
+-- Prepare a high quality artifact with an accompanying prompt yaml.
+
+2. Adopting hints from the attached guide from, generate a prompt for executing this task to precision. We will be using Cline a coding assistant AI in Vscode for the task. 
+- Ensure the AI is instructed to use the list of available mcp tools (reasoner, sequential thinking, memory, search, windows CLI, shell and coding agent, Gitlab, Gihub, etc) else use reasoner to select the required tool from mcp-installer and install and include the tool in the workflow for goal completion. 
+- Ensure the AI (Cline) is properly instructed against goal-abandonment.
+\update the artifacts to suite.
