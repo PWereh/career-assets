@@ -1,0 +1,105 @@
+{
+  "overall_fit": 86.2,
+  "areas": [
+    {
+      "area": "Humanitarian Experience",
+      "required": "5+ years humanitarian assistance experience",
+      "candidate": "17 years WASH/humanitarian experience across multiple countries",
+      "fit": 95,
+      "remarks": "Extensive experience exceeds requirements with 17+ years in humanitarian WASH operations across Kenya, Tanzania, Jordan, South Sudan, Ecuador, Nigeria, and Sudan"
+    },
+    {
+      "area": "USG Experience",
+      "required": "1+ year USG assistance programs experience",
+      "candidate": "Current IOM Project Officer (2024) - indirect USG funding experience",
+      "fit": 75,
+      "remarks": "Current role with IOM involves USG-funded humanitarian programs. IOM receives significant DOS/USAID funding for humanitarian operations"
+    },
+    {
+      "area": "Education",
+      "required": "Bachelor's degree in relevant field",
+      "candidate": "BSc. Water and Environmental Engineering (Egerton University, 2002-2007)",
+      "fit": 85,
+      "remarks": "Engineering degree provides strong technical foundation, though not directly in preferred fields like public health or international relations"
+    },
+    {
+      "area": "Project Management",
+      "required": "Advanced project management experience",
+      "candidate": "Multiple PM roles: Project Manager (GIBB), WASH Coordinator, Project Officer",
+      "fit": 90,
+      "remarks": "Extensive project management experience across emergency response, infrastructure development, and humanitarian operations"
+    },
+    {
+      "area": "Technical Skills - WASH",
+      "required": "Technical expertise in humanitarian assistance",
+      "candidate": "Water supply engineering, sanitation systems, emergency response coordination",
+      "fit": 95,
+      "remarks": "Strong technical foundation in WASH with hands-on experience in water supply design, emergency response, and infrastructure development"
+    },
+    {
+      "area": "Financial Management",
+      "required": "Budget management and financial oversight",
+      "candidate": "Project budget management experience mentioned in multiple positions",
+      "fit": 75,
+      "remarks": "Experience with project budgets but may need strengthening in DOS-specific financial regulations and compliance"
+    },
+    {
+      "area": "Geographic Knowledge",
+      "required": "Sudan context and regional understanding",
+      "candidate": "Current Project Officer WASH in Sudan (2024), previous East Africa experience",
+      "fit": 95,
+      "remarks": "Currently working in Sudan with IOM, providing direct knowledge of current context, challenges, and stakeholder landscape"
+    },
+    {
+      "area": "Organizational Experience",
+      "required": "Large governmental/donor organizations",
+      "candidate": "IOM, IFRC, Oxfam GB, NRC, IMC - all major humanitarian organizations",
+      "fit": 90,
+      "remarks": "Extensive experience with major humanitarian organizations that are key DOS implementing partners"
+    },
+    {
+      "area": "Stakeholder Engagement",
+      "required": "Senior-level engagement and partnership building",
+      "candidate": "Multiple coordination roles with UN agencies, NGOs, government entities",
+      "fit": 85,
+      "remarks": "Strong stakeholder engagement experience, though may need development in diplomatic/embassy context"
+    },
+    {
+      "area": "Monitoring & Evaluation",
+      "required": "M&E systems and performance monitoring",
+      "candidate": "Technical supervision and monitoring experience in multiple roles",
+      "fit": 80,
+      "remarks": "Good technical monitoring experience but may need strengthening in formal M&E frameworks and reporting"
+    },
+    {
+      "area": "Communication Skills",
+      "required": "Superior written/oral communication, bilingual capability",
+      "candidate": "Multilingual professional with extensive report writing and stakeholder communication",
+      "fit": 85,
+      "remarks": "Strong communication skills demonstrated through international roles, though formal diplomatic communication skills may need development"
+    },
+    {
+      "area": "Cultural Competency",
+      "required": "Islamic culture and customs knowledge",
+      "candidate": "Experience in Sudan, Jordan, and other Islamic contexts",
+      "fit": 85,
+      "remarks": "Direct experience working in Islamic cultural contexts including current Sudan assignment"
+    }
+  ],
+  "summary": {
+    "strengths": [
+      "Extensive humanitarian experience (17+ years)",
+      "Current Sudan operations experience",
+      "Strong technical WASH expertise",
+      "Major humanitarian organization experience",
+      "Multicultural and multilingual capabilities"
+    ],
+    "development_areas": [
+      "DOS-specific financial regulations knowledge",
+      "Formal diplomatic communication protocols",
+      "USG assistance program regulations",
+      "Advanced M&E frameworks",
+      "Embassy operational procedures"
+    ]
+  }
+}
